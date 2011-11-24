@@ -13,9 +13,9 @@ class sfOAuthToken
    * key = the token
    * secret = the token secret
    */
-  function __construct()
+  function __construct($key,$secret)
   {
-    $this->key = sfConfig::get('app_oauth_consumer_key');
+    $this->key = $key;
     $this->secret = $secret;
   }
 

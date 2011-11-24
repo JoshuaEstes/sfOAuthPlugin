@@ -10,7 +10,7 @@ class sfOAuthUtil
   {
     if (is_array($input))
     {
-      return array_map(array('OAuthUtil', 'urlencode_rfc3986'), $input);
+      return array_map(array('sfOAuthUtil', 'urlencode_rfc3986'), $input);
     }
     else if (is_scalar($input))
     {
